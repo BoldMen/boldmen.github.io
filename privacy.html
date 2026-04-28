@@ -1,188 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Bold Men of God</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: "EB Garamond", Georgia, serif;
-    background: #0a0d0f;
-    color: #c9b898;
-    padding: 3rem 2rem;
-  }
-  .container {
-    max-width: 740px;
-    margin: 0 auto;
-  }
-  .back-link {
-    display: inline-block;
-    font-size: 0.8rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: #c9a96e;
-    text-decoration: none;
-    margin-bottom: 3rem;
-  }
-  .back-link:hover { text-decoration: underline; }
-  .logo {
-    font-family: "Playfair Display", serif;
-    font-size: 1.2rem;
-    color: #f0e8d4;
-    margin-bottom: 0.3rem;
-  }
-  .tagline {
-    font-size: 0.75rem;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    color: #c9a96e;
-    margin-bottom: 3rem;
-  }
-  h1 {
-    font-family: "Playfair Display", serif;
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 700;
-    color: #f0e8d4;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-  }
-  .effective-date {
-    font-size: 0.85rem;
-    color: #7a6e5f;
-    margin-bottom: 3rem;
-    font-style: italic;
-  }
-  .divider {
-    width: 50px;
-    height: 2px;
-    background: #c9a96e;
-    margin: 2.5rem 0;
-  }
-  h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 1.3rem;
-    color: #f0e8d4;
-    margin-bottom: 0.8rem;
-    margin-top: 2.5rem;
-  }
-  p {
-    font-size: 1.05rem;
-    line-height: 1.85;
-    color: #c9b898;
-    margin-bottom: 1.2rem;
-  }
-  ul {
-    margin: 0.5rem 0 1.2rem 1.5rem;
-  }
-  ul li {
-    font-size: 1.05rem;
-    line-height: 1.85;
-    color: #c9b898;
-    margin-bottom: 0.4rem;
-  }
-  a { color: #c9a96e; }
-  .contact-box {
-    border: 1px solid rgba(201, 169, 110, 0.3);
-    background: rgba(201, 169, 110, 0.05);
-    padding: 1.5rem 2rem;
-    margin-top: 2rem;
-  }
-  .contact-box p { margin-bottom: 0.4rem; }
-  footer {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(201, 169, 110, 0.1);
-    font-size: 0.8rem;
-    color: rgba(201, 169, 110, 0.5);
-    letter-spacing: 0.1em;
-    text-align: center;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Bold Men of God</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #1a1208;
+      --parchment: #f5efe0;
+      --gold:      #8b6914;
+      --gold-light:#c49a2a;
+      --rule:      #c8ad7a;
+      --muted:     #6b5a3a;
+    }
+
+    html { font-size: 18px; }
+
+    body {
+      background-color: var(--parchment);
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.8;
+      padding: 3rem 1.25rem 5rem;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      padding-bottom: 2.5rem;
+      border-bottom: 2px solid var(--rule);
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .emblem {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      opacity: 0.7;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.9rem;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+    }
+
+    .app-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .effective-date {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ── Ornamental rule ── */
+    .ornament {
+      text-align: center;
+      color: var(--rule);
+      font-size: 1.2rem;
+      letter-spacing: 0.3em;
+      margin: 2rem 0;
+      user-select: none;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    ul {
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: var(--gold-light); }
+
+    /* ── Contact box ── */
+    .contact-box {
+      background: rgba(139, 105, 20, 0.08);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .contact-box p { margin-bottom: 0.25rem; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
+<div class="page">
 
-  <a href="/" class="back-link">&larr; Back to Home</a>
+  <header>
+    <div class="emblem">✦</div>
+    <h1>Privacy Policy</h1>
+    <div class="app-name">Bold Men of God</div>
+    <div class="effective-date">Effective Date: April 28, 2026</div>
+  </header>
 
-  <p class="logo">Bold Men of God</p>
-  <p class="tagline">Forged in Faith</p>
+  <section>
+    <p>
+      Bold Men of God ("we," "our," or "the app") is a daily devotional application built
+      for men who desire to grow in faith, character, and purpose. We take your privacy
+      seriously. This Privacy Policy explains what information we collect, how it is used,
+      and the choices you have regarding your data.
+    </p>
+    <p>
+      By using the Bold Men of God app, you agree to the practices described in this policy.
+    </p>
+  </section>
 
-  <h1>Privacy Policy</h1>
-  <p class="effective-date">Effective Date: January 1, 2025 &nbsp;&middot;&nbsp; Last Updated: April 2026</p>
+  <div class="ornament">· · ✦ · ·</div>
 
-  <div class="divider"></div>
+  <section>
+    <h2>Information We Collect</h2>
+    <p>We collect only the minimum information needed to personalize your experience:</p>
+    <ul>
+      <li>
+        <strong>Your first name</strong> — entered during onboarding and used to personalize
+        the devotional experience within the app.
+      </li>
+      <li>
+        <strong>Email address (optional)</strong> — you may choose to provide this during
+        onboarding. If provided, it may be used to send occasional updates or announcements
+        related to the app.
+      </li>
+    </ul>
+    <p>
+      We do <strong>not</strong> collect device identifiers, location data, usage analytics,
+      or any other personal information beyond what is listed above.
+    </p>
+  </section>
 
-  <p>Bold Men of God (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting your privacy. This Privacy Policy explains what information we collect when you use the Bold Men of God mobile application, how we use it, and your rights regarding that information.</p>
+  <div class="ornament">· · ✦ · ·</div>
 
-  <p>By using the app, you agree to the practices described in this policy.</p>
+  <section>
+    <h2>How Your Information Is Stored</h2>
+    <p>
+      Your name and any email address you provide are stored <strong>locally on your
+      device</strong> using AsyncStorage, a standard on-device storage mechanism provided
+      by your phone's operating system. This data does not leave your device and is not
+      transmitted to any external server owned or operated by us.
+    </p>
+    <p>
+      If you delete the app, this locally stored information is removed from your device
+      along with it.
+    </p>
+  </section>
 
-  <h2>1. Information We Collect</h2>
-  <p>We collect only what is necessary to provide you with the Bold Men of God experience:</p>
-  <ul>
-    <li><strong>Your first name</strong> — entered voluntarily when you first open the app, used only to personalize your experience (e.g., &ldquo;Good morning, Jason&rdquo;)</li>
-    <li><strong>Bookmarks and reading progress</strong> — devotionals you have bookmarked and days you have completed, stored so your progress is saved across sessions</li>
-    <li><strong>Push notification preferences</strong> — whether you have enabled daily reminders and your preferred time, if applicable</li>
-  </ul>
-  <p>We do <strong>not</strong> require you to create an account with an email address or password. We do <strong>not</strong> collect your location, contacts, camera, or any other device data.</p>
+  <div class="ornament">· · ✦ · ·</div>
 
-  <h2>2. How We Use Your Information</h2>
-  <p>The information we collect is used solely to:</p>
-  <ul>
-    <li>Personalize your in-app experience with your name</li>
-    <li>Save your bookmarks and reading progress so they persist between sessions</li>
-    <li>Send daily devotional reminders if you have enabled notifications</li>
-    <li>Provide and maintain the app&rsquo;s core functionality</li>
-  </ul>
-  <p>We do <strong>not</strong> use your information for advertising, sell it to third parties, or use it for any purpose beyond operating the app.</p>
+  <section>
+    <h2>How Your Information Is Used</h2>
+    <p>Your information is used solely to:</p>
+    <ul>
+      <li>Display your name within the app as a personal touch to your devotional experience.</li>
+      <li>
+        Send you occasional app-related communications if you voluntarily provided your email
+        address and consented to receive them.
+      </li>
+    </ul>
+    <p>
+      We do <strong>not</strong> use your information for advertising, profiling, or any
+      automated decision-making.
+    </p>
+  </section>
 
-  <h2>3. Data Storage</h2>
-  <p>Your name, bookmarks, and reading progress are stored securely using <strong>Supabase</strong>, a cloud database platform. Supabase stores data on secure servers and complies with industry-standard security practices. You can learn more at <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>.</p>
+  <div class="ornament">· · ✦ · ·</div>
 
-  <h2>4. Third-Party Services</h2>
-  <p>Bold Men of God uses the following third-party services:</p>
-  <ul>
-    <li><strong>Supabase</strong> — secure cloud database for storing your bookmarks and reading progress</li>
-    <li><strong>RevenueCat</strong> (for paid subscribers) — processes and manages subscription payments on Android. RevenueCat does not receive your name or reading data. You can review their privacy policy at <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></li>
-  </ul>
-  <p>We do not integrate with advertising networks, analytics platforms, or social media trackers.</p>
+  <section>
+    <h2>We Never Sell or Share Your Data</h2>
+    <p>
+      Your personal information is <strong>never sold, rented, traded, or shared</strong>
+      with any third party for any purpose — commercial or otherwise. We have no data
+      brokers, advertising partners, or analytics services that receive your personal information.
+    </p>
+  </section>
 
-  <h2>5. Children&rsquo;s Privacy</h2>
-  <p>Bold Men of God is intended for users aged 13 and older. We do not knowingly collect any personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will delete it promptly.</p>
+  <div class="ornament">· · ✦ · ·</div>
 
-  <h2>6. Your Rights</h2>
-  <p>You have the right to:</p>
-  <ul>
-    <li>Request deletion of your name and reading data at any time</li>
-    <li>Opt out of push notifications at any time through your device settings</li>
-    <li>Ask what data we hold about you</li>
-  </ul>
-  <p>To exercise any of these rights, contact us using the information below.</p>
+  <section>
+    <h2>Third-Party Services</h2>
+    <p>
+      The app uses the following third-party services to support its functionality.
+      These services operate under their own privacy policies and may process limited
+      technical data (such as purchase receipts or app session data) necessary for
+      their operation:
+    </p>
+    <ul>
+      <li>
+        <strong>RevenueCat</strong> — manages in-app subscription purchases and entitlements.
+        RevenueCat receives anonymized purchase data from the App Store or Google Play
+        to verify your subscription status.
+        (<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>)
+      </li>
+      <li>
+        <strong>Apple App Store / Google Play</strong> — processes payments for subscriptions
+        in accordance with their respective platform policies. We do not receive or store
+        your payment card information.
+      </li>
+      <li>
+        <strong>Expo / EAS</strong> — used to build and deliver the application. No personal
+        user data is shared with Expo during normal app operation.
+      </li>
+    </ul>
+  </section>
 
-  <h2>7. Data Retention</h2>
-  <p>We retain your name, bookmarks, and reading progress for as long as you use the app. If you request deletion of your data, we will remove it from our systems within 30 days.</p>
+  <div class="ornament">· · ✦ · ·</div>
 
-  <h2>8. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. When we do, we will update the &ldquo;Last Updated&rdquo; date at the top of this page. Continued use of the app after changes are posted constitutes your acceptance of the revised policy.</p>
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>
+      Bold Men of God is intended for adult men and is not directed at children under the age
+      of 13. We do not knowingly collect personal information from children. If you believe a
+      child has provided personal information through the app, please contact us and we will
+      promptly take steps to remove that information.
+    </p>
+  </section>
 
-  <h2>9. Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy or how your data is handled, please contact us:</p>
-  <div class="contact-box">
-    <p><strong>Bold Men of God</strong></p>
-    <p>Email: <a href="mailto:inspiringandfearless@gmail.com">InspiringandFearless@gmail.com</a></p>
-    <p>Website: <a href="https://boldmen.github.io">boldmen.github.io</a></p>
-  </div>
+  <div class="ornament">· · ✦ · ·</div>
 
-  <div class="divider"></div>
+  <section>
+    <h2>Your Rights & Choices</h2>
+    <p>You have full control over your data:</p>
+    <ul>
+      <li>
+        <strong>Access or correction</strong> — if you have questions about what information
+        is stored, contact us at the email below.
+      </li>
+      <li>
+        <strong>Deletion</strong> — uninstalling the app removes all locally stored data
+        from your device. If you provided an email address and wish to have it removed from
+        any communication list, contact us and we will honor that request promptly.
+      </li>
+      <li>
+        <strong>Opt-out of emails</strong> — if you provided your email and no longer wish
+        to receive communications, reply to any email from us with "Unsubscribe" or contact
+        us directly.
+      </li>
+    </ul>
+  </section>
 
-  <p style="font-style: italic; color: #7a6e5f; font-size: 0.95rem;">This privacy policy was written to be honest and plain-spoken, because that is what Bold Men of God is about.</p>
+  <div class="ornament">· · ✦ · ·</div>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will revise the
+      Effective Date at the top of this page. We encourage you to review this policy
+      periodically. Continued use of the app after changes are posted constitutes your
+      acceptance of the updated policy.
+    </p>
+  </section>
+
+  <div class="ornament">· · ✦ · ·</div>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>
+      If you have any questions, concerns, or requests regarding this Privacy Policy or
+      your personal information, please contact us:
+    </p>
+    <div class="contact-box">
+      <p><strong>Bold Men of God</strong></p>
+      <p>Email: <a href="mailto:BoldMenApp@gmail.com">BoldMenApp@gmail.com</a></p>
+      <p>Website: <a href="https://boldmen.github.io" target="_blank" rel="noopener">boldmen.github.io</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Bold Men of God. All rights reserved.<br />
+    <em>The forge stays lit.</em>
+  </footer>
 
 </div>
-
-<footer>
-  Bold Men of God &nbsp;&middot;&nbsp; Forged in Faith &nbsp;&middot;&nbsp; boldmenofgod.app
-</footer>
-
 </body>
 </html>
